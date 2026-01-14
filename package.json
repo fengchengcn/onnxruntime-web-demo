@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "prepare": "node post-install.js",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target app",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider&& vue-cli-service serve",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider&& vue-cli-service build --target app",
     "electron": "electron .",
     "electron-packager": "electron-packager . ONNXRuntimeWeb-demo --win32 --ignore=\"/(src|types|public|node_modules)\""
   },
